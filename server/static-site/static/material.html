@@ -1,0 +1,23 @@
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design Lite</title>
+    <link rel="stylesheet" href="/static/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/static/material-design-lite/material.min.js"></script>
+</head>
+<body>
+<div id="container"/>
+<script>
+  var button = document.createElement('button');
+  var textNode = document.createTextNode('Click Me!');
+  button.appendChild(textNode);
+  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+  componentHandler.upgradeElement(button);
+  document.getElementById('container').appendChild(button);
+</script>
+</body>
+</html>
